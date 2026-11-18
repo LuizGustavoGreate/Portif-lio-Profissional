@@ -1,0 +1,173 @@
+/*Configuração */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Configuração do Body */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #2a2a2b;
+    line-height: 1.6;
+}
+
+/*Cabeçalho */
+header {
+    background-color: #336e9e;
+    color: #fff;
+    padding: 20px 8%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #ff6600;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff6600;
+}
+
+/*Menu de navegação */
+nav {
+    display: flex;
+    gap: 25px
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+/*Conteúdo principal */
+main {
+    width: 80%;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+/*SEÇÕES */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*TÍTULOS */
+
+section h2 {
+    color: #ff6600;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*IMAGEM */
+
+section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/*PARÁGRAFOS */
+
+section p {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/*LISTAS */
+
+section ul {
+    padding-left: 25px;
+}
+
+section li {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/*PROJETOS */
+
+.projeto {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    /* Coloca a foto em cima e o texto embaixo */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    text-align: center;
+    /* Centraliza todos os textos */
+    gap: 20px;
+}
+
+/* Garante que a div da foto e a imagem fiquem centralizadas e com formato legal */
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    /* Faz a imagem ficar redonda */
+    /* Se quiser deixar a foto redonda, descomente a linha abaixo: */
+    /* border-radius: 50%; */
+}
+
+.topo-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 2. Deixa os links do menu em linha (horizontal) e remove as bolinhas */
+.menu ul {
+    list-style: none;
+    /* Remove as bolinhas da lista */
+    display: flex;
+    /* Coloca os itens um ao lado do outro */
+    gap: 20px;
+    /* Espaçamento entre os links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Se você quiser centralizar o menu inteiro no meio do cabeçalho, use isto no .topo-conteudo: */
+.topo-conteudo {
+    display: flex;
+    flex-direction: column;
+    /* Empilha a logo e o menu */
+    align-items: center;
+    /* Centraliza ambos horizontalmente */
+    text-align: center;
+    gap: 15px;
+}
